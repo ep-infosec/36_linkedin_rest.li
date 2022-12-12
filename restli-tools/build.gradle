@@ -1,0 +1,27 @@
+dependencies {
+  compile project(':data')
+  compile project(':r2-core')
+  compile project(':li-jersey-uri')
+  compile project(':generator')
+  compile project(':pegasus-common')
+  compile project(':restli-common')
+  compile project(':restli-client')
+  compile project(':restli-server')
+  compile externalDependency.caffeine
+  compile externalDependency.commonsIo
+  compile externalDependency.codemodel
+  compile externalDependency.commonsCli
+  compile externalDependency.commonsLang
+  compile externalDependency.jacksonCore
+  compile externalDependency.jacksonDataBind
+  compile externalDependency.jdkTools
+  compile externalDependency.velocity
+
+  testCompile externalDependency.mockito
+  testCompile externalDependency.testng
+  testCompile externalDependency.junit
+  testCompile externalDependency.commonsHttpClient
+  testCompile externalDependency.javaparser
+}
+
+apply from: "${buildScriptDirPath}/restModel.gradle"
